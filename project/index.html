@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="registration" class="page">
+        <h2>Registration</h2>
+        <form id="registrationForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required title="Alphabetical characters only">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required title="Alphabetical characters only">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="registerUser()">Register</button>
+        </form>
+    </div>
+
+    <div id="signin" class="page hidden">
+        <h2>Sign In</h2>
+        <form id="signinForm">
+            <label for="signinEmail">Email:</label>
+            <input type="email" id="signinEmail" name="email" required>
+
+            <label for="signinPassword">Password:</label>
+            <input type="password" id="signinPassword" name="password" required>
+
+            <button type="button" onclick="signInUser()">Sign In</button>
+        </form>
+    </div>
+
+    <div id="exam" class="page hidden">
+        <h2>Exam</h2>
+        <div id="timer">Time Remaining: <span id="time">10:00</span></div>
+        <div id="questionContainer">
+            <p id="questionText"></p>
+            <div id="choices"></div>
+        </div>
+        <button onclick="prevQuestion()">Previous</button>
+        <button onclick="markQuestion()">Mark</button>
+        <button onclick="nextQuestion()">Next</button>
+        <button onclick="submitExam()">Submit</button>
+    
+        <h3></h3>
+        <ul id="markedQuestionsList">
+        </ul>
+    </div>
+    
+
+    <div id="timeout" class="page hidden">
+        <h2>Time's Up!</h2>
+        <p id="timeoutMessage"></p>
+    </div>
+
+    <div id="grades" class="page hidden">
+        <h2>Exam Submitted</h2>
+        <p id="gradesMessage"></p>
+    </div>
+    
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+.page {
+    display: block;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: rgb(245, 228, 200);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page h2 {
+    margin-bottom: 20px;
+    color: rgb(154, 96, 3);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: rgb(128, 95, 32);
+}
+
+form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color:  rgb(154, 96, 3);
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(244, 215, 168);
+}
+
+.hidden {
+    display: none;
+
+}
+
+#timer {
+    font-size: 18px;
+    color: black;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#questionContainer {
+    margin-bottom: 20px;
+}
+
+#questionContainer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#choices label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+    color: black;
+}
+
+#choices input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgb(154, 96, 3);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(244, 215, 168);
+}
+#markedQuestionsList {
+    position: fixed;
+    right: 250px;
+    top: 120px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
